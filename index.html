@@ -1,0 +1,88 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reidcon</title>
+    <link rel="stylesheet" href="assests/css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
+      rel="stylesheet">
+  </head>
+  <body>
+    <div class="navbar">
+      <div id="navigation-container">
+        <img id="logo" src="assests/img/logo.png" alt="logo">
+        <ul>
+          <li><a href="why_html.html">WHY HTML?</a></li>
+          <li><a href="#">HOME</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="row">
+      <div class="column">
+        <h1>HOME</h1>
+        <p>
+          HTML markup consists of several key components, including those called tags (and their attributes), character-based data types,character references and entity references. HTML tags most commonly come in pairs like <code>&lt;h1&gt;</code> and <code>&lt;/h1&gt;</code>
+          although some recodesent empty elements and so are unpaired, for example <code>&lt;img&gt;</code> .The first tag in such a pair is the start tag, and the second is the end tag(they are also called opening tags and closing tags).
+        </p>
+        <strong><a class="button" href="assests/why_html.html">Why HTML?</a></strong>
+      </div>
+      <div class="column">
+        <img id="img" src="assests/img/hero.jpg" alt="laptop" />
+      </div>
+    </div>
+    <div class="center">
+      <h3>Sample Table</h3>
+      <p>Following table uses <code>colspan</code> and <code>rowspan</code> attributes inside <code>&lt;td&gt;</code> to merge two or more cells</p>
+    </div>
+    <table id="table">
+      <tr>
+        <th></th>
+        <th>First Year</th>
+        <th>Second Year</th>
+        <th>Third Year</th>
+        <th>Fourth Year</th>
+      </tr>
+      <tr>
+        <td>8.00 a.m.- 10.00 a.m.</td>
+        <td>Data Structures & Algorithms</td>
+        <td>Software Engineering</td>
+        <td>Mobile Application Development</td>
+        <td>Parallel Computing</td>
+      </tr>
+      <tr>
+        <td>10.00 a.m.- 12.00 a.m.</td>
+        <td>Database</td>
+        <td>Functional Programming</td>
+        <td>Machine Learning</td>
+        <td>Computational Biology</td>
+      </tr>
+      <tr class="color">
+        <td>12.00 a.m.- 1.00 p.m.</td>
+        <td colspan="4" style="text-align:center;">Interval</td>
+      </tr>
+      <tr>
+        <td>1.00 p.m.- 3.00 p.m.</td>
+        <td>Mathematics</td>
+        <td style="border-bottom-color:#4E598C;" rowspan="2">
+          Group project
+          <ul>
+            <li>Previous Progress</li>
+            <li>Plan fot next week</li>
+          </ul>
+        </td>
+        <td>Game Development</td>
+        <td>Cognitive Robotics</td>
+      </tr>
+      <tr>
+        <td style="border-bottom-color:#4E598C;">3.00 p.m.- 5.00 p.m.</td>
+        <td style="border-bottom-color:#4E598C;">Programming Using C</td>
+        <td style="border-bottom-color:#4E598C;">Management</td>
+        <td style="border-bottom-color:#4E598C;">Phylosophy of Science</td>
+      </tr>
+    </table>
+  </body>
+</html>

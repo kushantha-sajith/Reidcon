@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Why HTML?</title>
+  <link rel="stylesheet" href="assests\css\style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="navbar">
+    <div id="navigation-container">
+      <img id="logo" src="assests\img\logo.png" alt="logo">
+      <ul>
+        <li><a href="#">WHY HTML?</a></li>
+        <li><a href="index.html">HOME</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="row">
+    <div class="column">
+      <img id="app" src="assests\img\app.png" alt="app">
+    </div>
+    <div class="column">
+      <h1>Why HTML?</h1>
+      <hr>
+      <p class="para"><b>HTML</b> (Following Paragraph is Left Aligned)</p>
+      <hr>
+      <p class="para">HTML is a responsible of giving a semantic meaning for your content.</p>
+      <p>For example:
+      <ol>
+        <li>HTML is a <code>&lt;h5&gt;</code>
+          <h5>title</h5><code>&lt;/h5&gt;</code>
+        </li>
+        <li>Followed by a <code>&lt;p&gt;</code>paragraph<code>&lt;/p&gt;</code></li>
+        <li>Then there's a footer[etc].</li>
+      </ol>
+      </p>
+      <p class="left">Web browsers read it to display your content according to their importance (a title is bigger than a text, a <code>&lt;strong&gt;</code><strong>"strong"</strong><code>&lt;/strong&gt;</code> text is more important than a single text, etc). <code>&lt;tt&gt;</code><tt>Crawlers</tt><code>&lt;/tt&gt;</code> (like robots) use it to identify what content is relevant to their activity (i.e. google needs your page title to show it on his page).</p>
+      <hr>
+      <p class="para"><b>CSS</b> (Following Paragraph is Justified)</p>
+      <hr>
+      <p class="justify">CSS gives a style to your application. It's fundamentally destined to the user. It allows to say <span id="s1">"this text is red"</span>, <span id="s2">"this block is 200px wide"</span>, etc. It's "basically" not used by crawlers but it has some importance(some robot avoid to render a text if it's hidden for example)</p>
+      <hr>
+      <p class="para"><b>JavaScript</b> (Following Paragraph is Right Aligned)</p>
+      <hr>
+      <p class="right">JavaScript, which is the only programming language of<br>
+        these 3, allows you to perform actions in real time (like<br>
+        showing a dialog when the user click a button).</p>
+    </div>
+  </div>
+  <div class="centered">
+    <form action="" class="form">
+      <div class="form-caption">
+        Sample Form
+      </div>
+      <br>
+      <label for="name">Name:</label>
+      <input type="text" name="Name:" id="name" placeholder="Name" active>
+      <br>
+      <br>
+      <label for="eMail">Email:</label>
+      <input type="email" name="eMail" id="eMail" placeholder="Email Address" active>
+      <br>
+      <br>
+      <label for="gender">Gender:</label>
+      <span class="rd">
+        <input type="radio" name="gender" value="male" id="rd-1">
+        <label for="gender"><span class="rd-text">Male</span></label>
+        <input type="radio" name="gender" value="female" id="rd-2">
+        <label for="gender"><span class="rd-text">Female</span></label>
+      </span>
+      <br>
+      <br>
+      <label for="year">Academic Year:</label>
+      <select name="year" id="year" required>
+        <span class="slct">
+          <option selected value="1" class="slct-0" disabled>Select from list</option>
+          <option value="1">1</option>
+          <option value="2" class="slct-2">2</option>
+          <option value="3" class="slct-3">3</option>
+          <option value="4" class="slct-4">4</option>
+        </span>
+      </select>
+      <br>
+      <br>
+      <label for="language">Familiar in:</label>
+      <span class="ch">
+        <input type="checkbox" name="language" value="HTML" id="ch-1">
+        <label for="HTML"><span class="ch-text">HTML</span></label>
+        <input type="checkbox" name="language" value="CSS" id="ch-2">
+        <label for="CSS"><span class="ch-text">CSS</span></label>
+        <input type="checkbox" name="language" value="JS" id="ch-3">
+        <label for="JS"><span class="ch-text">JS</span></label>
+      </span>
+      <br>
+      <br>
+      <div class="textarea">
+        <label for="feedback">Comment:</label>
+        <textarea name="feedback" rows="10" cols="30" placeholder="Your feedback" id="feedback"></textarea>
+      </div>
+      <br>
+      <div class="s-r">
+        <input type="submit" name="Submit" class="submit">
+        <input type="reset" name="Reset" class="reset">
+      </div>
+    </form>
+  </div>
+</body>
+</html>
